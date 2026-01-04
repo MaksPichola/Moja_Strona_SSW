@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zagrożone Gatunki - Nowości</title>
+    <link rel="stylesheet" href="styl_desktop.css">
+    <link rel="stylesheet" href="styl_mobile.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="header-content">
+        <h1 class="animate-fade">Ratujmy Zwierzęta</h1>
+        <p class="animate-fade">Projekt poświęcony gatunkom zagrożonym wyginięciem</p>
+    </div>
+</div>
+
+<div class="navbar animate-fade">
+    <a href="index.html">Strona Główna</a>
+    <a href="nowosci.html" class="active">Nowości</a>
+    <a href="kontakt.html">Kontakt</a>
+</div>
+<div class="side">
+    <h2 class="animate-fade h2">Statystyki zagrożonych gatunków</h2>
+
+    <div class="tabela-kontener animate-fade">
+        <table class="moja-tabela">
+            <thead>
+            <tr>
+                <th>Nazwa zwierzęcia</th>
+                <th>Region występowania</th>
+                <th>Liczba sztuk (2020)</th>
+                <th>Liczba sztuk (2025)</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Tygrys sumatrzański</td>
+                <td>Indonezja</td>
+                <td>~600</td>
+                <td>~400</td>
+            </tr>
+            <tr>
+                <td>Panda wielka</td>
+                <td>Chiny</td>
+                <td>~1600</td>
+                <td>~1850</td>
+            </tr>
+            <tr>
+                <td>Nosorożec czarny</td>
+                <td>Afryka</td>
+                <td>~4800</td>
+                <td>~6000</td>
+            </tr>
+            <tr>
+                <td>Goryl górski</td>
+                <td>Kongo/Uganda</td>
+                <td>~800</td>
+                <td>~1000</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<h2 class="animate-fade h2">Nowe gatunki</h2>
+
+<div class="kontener-gatunki animate-fade">
+    <div class="karta-gatunek" onmouseover="podswietl(this)" onmouseout="odswietl(this)" >
+        <img src="zdjecia/REKIN.jpg" alt="Rekin Gitarowy">
+        <h3 >Rekin Gitarowy</h3>
+        <p>
+            Niezwykła ryba chrzęstnoszkieletowa, której kształt ciała przypomina połączenie rekina i płaszczki, zamieszkująca piaszczyste dna oceanów Azji. Gatunek ten, wyróżniający się unikalnym kodem genetycznym, został oficjalnie zidentyfikowany i opisany przez biologów morskich na przełomie 2024 i 2025 roku.
+        </p>
+    </div>
+
+    <div class="karta-gatunek" onmouseover="podswietl(this)" onmouseout="odswietl(this)">
+        <img src="zdjecia/Gekon.jpg" alt="Gekon Van Gogha">
+        <h3>Gekon Van Gogha</h3>
+        <p>
+            Ten spektakularny jaszczur z gór Indii zawdzięcza swoją nazwę ubarwieniu przypominającemu obraz 'Gwiaździsta noc'. Jest to jedno z najgłośniejszych odkryć herpetologicznych ostatnich lat, które zostało oficjalnie ogłoszone w marcu 2024 roku.
+        </p>
+    </div>
+
+    <div class="karta-gatunek" onmouseover="podswietl(this)" onmouseout="odswietl(this)">
+        <img src="zdjecia/Gigancik.jpg" alt="Gigancik Północny">
+        <h3>Gigancik Północny</h3>
+        <p>
+            Niezwykle zwinny ptak z rodziny kolibrowatych, odkryty podczas najnowszej ekspedycji w wysokich partiach Andów. Dzięki unikalnej budowie skrzydeł potrafi przetrwać w ekstremalnych warunkach, a świat nauki oficjalnie sklasyfikował go jako nowy gatunek w styczniu 2025 roku.
+        </p>
+    </div>
+</div>
+
+<div class="footer">
+    <p>Kontakt: +48 22 660 44 33 </p>
+</div>
+
+<script src="skrypt.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zagrożone Gatunki - Kontakt</title>
+    <link rel="stylesheet" href="styl_desktop.css">
+    <link rel="stylesheet" href="styl_mobile.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="header-content">
+        <h1 class="animate-fade">Ratujmy Zwierzęta</h1>
+        <p class="animate-fade">Projekt poświęcony gatunkom zagrożonym wyginięciem</p>
+    </div>
+</div>
+
+<div class="navbar animate-fade">
+    <a href="index.html">Strona Główna</a>
+    <a href="nowosci.html">Nowości</a>
+    <a href="kontakt.html" class="active">Kontakt</a>
+</div>
+
+<div class="side">
+    <h2 class="animate-fade h2">Skontaktuj się z nami</h2>
+
+    <div class="kontakt-flex animate-fade">
+        <div class="formularz">
+            <form id="contactForm" onsubmit="return validateForm()">
+
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="firstname" placeholder="Wpisz swoje imię..">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Twój e-mail..">
+
+                <label for="temat">Temat zapytania:</label>
+                <select id="temat" name="temat">
+                    <optgroup label="Informacje">
+                        <option value="gatunki">Zagrożone gatunki</option>
+                    </optgroup>
+                    <optgroup label="Współpraca">
+                        <option value="wolontariat">Wolontariat</option>
+                    </optgroup>
+                </select>
+
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" placeholder="Napisz wiadomość.."></textarea>
+
+                <p id="blad"></p>
+
+                <button type="submit" class="btn-wyslij">Wyślij wiadomość</button>
+
+            </form>
+        </div>
+
+        <div class="mapa-kontener">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3090.102678859593!2d20.991744577057624!3d52.22381715811523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc96ae8df4f5%3A0xfd5f36ad75e9e7f5!2sPolsko-Japo%C5%84ska%20Akademia%20Technik%20Komputerowych!5e1!3m2!1spl!2spl!4v1767452708559!5m2!1spl!2spl"> </iframe>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p> Kontakt: +48 22 660 44 33 </p>
+</div>
+
+<script src="skrypt.js"></script>
+</body>
+</html>
