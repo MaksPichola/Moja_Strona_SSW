@@ -1,7 +1,13 @@
 @media screen and (max-width: 1000px) {
-    body {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
         margin: 0;
         padding: 0;
+    }
+
+    * {
+        box-sizing: border-box;
     }
 
     .header {
@@ -61,7 +67,7 @@
     .paragraf1 {
         flex: none;
         width: 100%;
-        font-size: 20px;
+        font-size: 15px;
         text-align: center;
         padding: 10px;
         box-sizing: border-box;
@@ -89,11 +95,62 @@
     }
 
     .opis {
-        font-size: 20px;
+        font-size: 15px;
         padding: 0 10px;
     }
+
+    .footer {
+        padding: 15px;
+    }
+
+    .kontakt-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .formularz {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .mapa-kontener {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .mapa-kontener iframe {
+        height: 250px;
+        width: 100%;
+    }
+
+    .tabela-kontener {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+
+    .moja-tabela {
+        min-width: 600px;
+    }
+
+    .kontener-gatunki {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .karta-gatunek {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .karta-gatunek img {
+        max-width: 100%;
+        height: auto;
+    }
 }
-.footer {
-    padding: 15px;
-}
-/*Inne podstrony wyświetlają się poprawnie w trybie mobilnym*/
